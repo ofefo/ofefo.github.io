@@ -1,6 +1,11 @@
 import { Csound } from '@csound/browser';
 let csound = null;
 
+window.setup = setup;
+window.draw = draw;
+window.mousePressed = mousePressed;
+window.windowResized = windowResized;
+
 const code = `
 sr = 44100
 ksmps = 32
@@ -52,7 +57,7 @@ function windowResized() {
 
 function draw() {
 	background(32);
-	for (let i = 0; i < balls.length; i++) {
+	for (let i = balls.length - 1; i >= 0; i--){
 		balls[i].move();
 		balls[i].show();
 		if (balls[i].n > 10) {
@@ -76,7 +81,6 @@ class Ball {
 		this.c = color(255, random(184), random(77));
 		this.n = 0; //number of collisions
 	}
-
 	
 	move() {
 		let bounced = false;
@@ -91,7 +95,6 @@ class Ball {
 			this.acc1 = random(1, 10);
 			bounced = true;
 		}
-
 		if (this.y > windowHeight) {
 			amp = Math.abs(this.acc2 / 20);
 			this.acc2 = random(10) * -1;
@@ -102,7 +105,6 @@ class Ball {
 			this.acc2 = random(1, 10);		
 			bounced = true;
 		}
-
 		if (bounced) {
 			let randomNoteIndex = int(random(0, scale.length));
 			note = scale[randomNoteIndex];
@@ -110,7 +112,6 @@ class Ball {
 			playNote(note, amp, pan);
 			this.n += 1;
 		}
-
 		this.x = this.x + this.acc1;
 		this.y = this.y + this.acc2;
 	}
