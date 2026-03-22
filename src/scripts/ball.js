@@ -85,22 +85,22 @@ class Ball {
 	move() {
 		let bounced = false;
 
-		if (this.x > windowWidth) {
+		if (this.x > windowWidth-(WIDTH/2)) {
 			amp = Math.abs(this.acc1 / 20);
 			this.acc1 = random(10) * -1;
 			bounced = true;
 		}
-		else if (this.x < 0) {
+		else if (this.x < 0+(WIDTH/2)) {
 			amp = Math.abs(this.acc1 / 20);
 			this.acc1 = random(1, 10);
 			bounced = true;
 		}
-		if (this.y > windowHeight) {
+		if (this.y > windowHeight-(HEIGHT/2)) {
 			amp = Math.abs(this.acc2 / 20);
 			this.acc2 = random(10) * -1;
 			bounced = true;
 		}
-		else if (this.y < 0) {
+		else if (this.y < 0+(HEIGHT/2)) {
 			amp = Math.abs(this.acc2 / 20);
 			this.acc2 = random(1, 10);		
 			bounced = true;
