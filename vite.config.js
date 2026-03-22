@@ -2,7 +2,7 @@ import { resolve } from 'path'
 import { readdirSync } from 'fs'
 import { defineConfig } from 'vite'
 
-const allHtmlFiles = readdirSync(__dirname)
+const rootHtmlFiles = readdirSync(__dirname)
   .filter(file => file.endsWith('.html'))
   .reduce((entries, file) => {
     const name = file.replace('.html', '');
@@ -13,7 +13,7 @@ const allHtmlFiles = readdirSync(__dirname)
 export default defineConfig({
   build: {
     rollupOptions: {
-      input:allHtmlFiles
+      input: rootHtmlFiles
     }
   }
 })

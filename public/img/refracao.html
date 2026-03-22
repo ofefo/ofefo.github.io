@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta charset="utf-8"/>  
+<title>fefo . img . refração</title>   
+	<link rel="stylesheet" type="text/css" href="/src/style.css">
+<style type="text/css">
+h1.refracao {
+    display: inline;
+    position: absolute;
+    color: rgb(59, 248, 248);
+    letter-spacing: 0.02em;
+    perspective: 500px;
+}
+
+h1.refracao::before,
+h1.refracao::after {
+    content: attr(aria-label);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
+}
+
+h1.refracao::before {
+    animation: floatAbove 3.5s ease-in-out infinite;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+            clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+}
+
+h1.refracao::after {
+    opacity: 0.65;
+    filter: blur(0.02em);
+    transform: translate(-50%, -50%) rotateX(21deg);
+    animation: floatBelow 3.5s ease-in-out infinite;
+    -webkit-clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 50%, 100% 50%, 100% 100%, 0% 100%);
+}
+
+@keyframes floatAbove {
+    50% {
+        transform: translate(-50%, -60%);
+        -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+                clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 60%);
+    }
+}
+
+@keyframes floatBelow {
+    50% {
+        transform: translate(-50%, -60%) rotateX(10deg);
+        -webkit-clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+                clip-path: polygon(0% 60%, 100% 60%, 100% 100%, 0% 100%);
+    }
+}
+</style>
+</head>  
+
+<body> 
+
+	<div class="inner">
+	<h1 style="display: inline;">fefo . img .</h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1 class="refracao" aria-label="refração"></h1>
+	
+	<div style="width:50%;">
+	<hr noshade="noshade" >
+	</div>
+
+	<nav> 
+	   <h3><a href="../img"><<<</a></h3>
+	</nav>
+
+		<br>
+	<h3>refração</h3>	
+	<p><i>quando a luz entorta</i>
+	<br>03 fotos. Belo Horizonte-MG | Dezembro 2017.</p>
+		<br>
+		<img src="./refracao/01.JPG" class="hor">
+		<img src="./refracao/02.JPG" class="hor">
+		<img src="./refracao/03.JPG" class="hor">
+<br>
+<br>
+<br>
+	<footer>
+	<p style="font-size:small">Felippe Brandão</p><a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank"><img style="width:10%; height:10%" src="./mini/by-nc-sa.png"></a>
+	</footer>
+</div>
+</body>
+</html>
