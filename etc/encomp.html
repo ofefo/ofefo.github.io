@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2023-10-26" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>ENCOMP</title>
+        <link rel="stylesheet" href="../style.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+<style>
+h1 {font-size: 3.5em;color:OldLace;}
+h2 {font-size: 2.5em;color:Moccasin} 
+h3 {font-size: 2em;color:SandyBrown}
+h4 {font-size: 1em;color:Coral}
+h5 {font-size: 1em;color:Tomato}
+div.inner{
+	max-width:70%;
+}
+p {
+	font-size:28px;
+}
+.centeredimg {
+    display: table-cell;
+    text-align: center;
+    height: 50%;
+    width: 50%;
+    vertical-align: middle;
+}
+img.presentationimg {
+	width:30%;
+	height:30%;
+}
+
+</style>
+	<script charset="utf-8">
+	function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+	</script>
+    </head>
+    <body>
+
+	    <div class="inner">
+	    	
+<h1>Música e computação: perspectivas de um musicista</h1>
+
+<div id="Page0">
+	<h2>Felippe Barros (PPGA-UFES)</h2>
+	<img style="width:30%; height:40%" src="./ubimus/FelippeBarros.jpg" align="left">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<nav>
+	<b>
+		<a href="#" onclick="return show('Page1','Page0');">>>></a>&nbsp;
+	</b>
+</nav>
+</div>
+
+<div id="Page1" style="display: none">
+<button type="button" class="collapsible">Biografia</button>
+<div class="content">
+<p>Musicista e pesquisador nascido em Vitória.
+<br>Licenciado em Música pela UFMG.
+<br>Mestrando em Artes pela UFES - linha de pesquisa <i>Interartes e Novas Mídias</i> sob orientação de Leandro Costalonga.
+<br>Professor de Arte na Rede Pública de Ensino do Espírito Santo.
+</p>
+</div>
+<br>
+<nav>
+	<b>
+		<a href="#" onclick="return show('Page0','Page1');"><<<</a>&nbsp;
+		<a href="#" onclick="return show('Page2','Page1');">>>></a>
+	</b>
+</nav>
+</div>
+
+<div id="Page2" style="display: none">
+<h3>Música acusmática</h3>
+
+<button type="button" class="collapsible">Definição</button>
+<div class="content">
+	<p>Música pensada para ser escutada por autofalantes, em oposição à performance humana.
+	Produção de composições eletrônicas por síntese e manipulação digital de áudio gravado.</p>
+</div>
+<br>
+
+<button type="button" class="collapsible">Dysgraphia (2018)</button>
+<div class="content">
+	<p>Sons gravados, organizados por uma DAW (Digital Audio Workstation).</p>
+	<div class="centeredimg">
+	<audio controls>    
+                <source src="../mus/dysgraphia.mp3" type="audio/mp3">    
+                Your browser does not support the audio player!    
+        </audio>
+	<br>
+	<br>
+		<img src="../mus/dysgraphia.jpg" class="presentationimg" alt="Dysgraphia">
+	</div>
+</div>
+<br>
+
+<button type="button" class="collapsible">Emersão (2020)</button>
+<div class="content">
+	<p>Sons gravados e sintetizados em PureData (Pd), organizados por uma DAW.</p>
+	<div class="centeredimg">
+	<audio controls>
+		<source src="../mus/emersao.mp3" type="audio/mp3">
+		Your browser does not support the audio player!      
+	</audio>
+	<br>
+	<br>
+	<img src="../mus/emersao.jpg" class="presentationimg" alt="Emersão">
+</div>
+</div>
+<br>
+
+<nav>
+	<b>
+		<a href="#" onclick="return show('Page1','Page2');"><<<</a>&nbsp;
+		<a href="#" onclick="return show('Page3','Page2');">>>></a>
+	</b>
+</nav>
+</div>
+
+<div id="Page3" style="display: none">
+<h3>Instrumentos híbridos</h3>
+<button type="button" class="collapsible">SBOX (2018)</button>
+<div class="content">
+		<p>Joystick com microfone <i>piezo</i> acoplado.
+		<br>Sons programados em Pd.</p>
+	<div class="centeredimg">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/N65vxKMwXaI?si=l4laPq8IPNi-zmcG&amp;start=16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+</div>
+<br>
+
+<button type="button" class="collapsible">BRUTAL (2021)</button>
+<div class="content">
+		<p>Escultura interativa.
+		<br>Cimento, canudos biodegradáveis, borracha, epóxi, potenciômetros, sensor ultrassônico, Arduino Nano e SuperCollider.</p>
+	<div class="centeredimg">
+		<img src="../mus/brutal/01.JPG" class="presentationimg" alt="Emersão">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/xzDeFb4Dw6A?si=GonDTAFlsd1d8x8u&amp;start=72" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+</div>
+<br>
+<nav>
+	<b>
+		<a href="#" onclick="return show('Page2','Page3');"><<<</a>&nbsp;
+		<a href="#" onclick="return show('Page4','Page3');">>>></a>
+	</b>
+</nav>
+</div>
+
+<div id="Page4" style="display: none">
+<h3>Partituras não convencionais e sistemas musicais interativos</h3>
+<button type="button" class="collapsible">Bifurcações (2018)</button>
+<div class="content">
+<p>Inspirada pelo conto <i>El Jardín de senderos que se bifurcan</i>, de Jorge
+Luis Borges, a peça utiliza recursos eletrônicos para modificar ou estender
+sons da flauta através do tempo.</p>
+	<div class="centeredimg">
+	<audio controls>
+		<source src="../mus/bifurcacoes.mp3" type="audio/mp3">
+		Your browser does not support the audio player!      
+	</audio>
+</div>
+</div>
+<br>
+
+<button type="button" class="collapsible">PING (2019)</button>
+<div class="content">
+<p>Vídeo-jogo controlado por improvisos musicais, elaborado com Caio Campos.
+<br>Inspirado no clássico "Pong" da ATARI, PING é um vídeo-jogo controlado por musicistas que utilizam seus instrumentos no lugar de manetes (ou raquetes). 
+</p>
+	<div class="centeredimg">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/aa5W2g5zsTM?si=HorppagAzLrbanUG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+</div>
+<br>
+
+
+<button type="button" class="collapsible">Silêncio de Chão (2021)</button>
+<div class="content">
+<p>Sorteador de versos poéticos de Manoel de Barros, escolhidos por sua musicalidade implícita.
+<br>O programa funciona como uma partitura aberta para improvisação livre.
+<br>Disponível aqui: <a href="https://ofefo.com.br/mus/silencio" target="_blank">https://ofefo.com.br/mus/silencio</a>
+</p>
+	<div class="centeredimg">
+		<img src="./encomp/silencio.png" class="presentationimg"/>
+	</div>
+</div>
+<br>
+
+<button type="button" class="collapsible">engenhoca (2021-presente)</button>
+<div class="content">
+	<p>
+	Máquina criativa, capaz de improvisar duos com musicistas em tempo real.
+	Pensada como um sistema para prática individual de improvisação livre, disponível como software livre.
+	<a href="https://github.com/ofefo/engenhoca" target="_blank">https://github.com/ofefo/engenhoca</a>
+	</p>
+	<div class="centeredimg">
+		<img src="../mus/engenhoca/01.JPG" class="presentationimg" alt=""/>
+	</div>
+</div>
+<br>
+<nav>
+	<b>
+		<a href="#" onclick="return show('Page3','Page4');"><<<</a>&nbsp;
+	</b>
+</nav>
+</div>
+
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</body>
+</html>
