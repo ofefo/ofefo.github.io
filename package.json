@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@csound/browser": "^7.0.0-beta29"
+  }
+}
