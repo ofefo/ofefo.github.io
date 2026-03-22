@@ -227,11 +227,14 @@ button.barro {
 button[type=english] {
 	background-color: #ffb84d;
 	color: black;
-	border: none;
+	padding: 3px;
+	transition: filter .5s ease;
+	cursor: pointer;
+        margin: .5%;
 }
 
 button[type=english]:hover {
-	opacity=0.8;
+	filter: brightness(.8);
 }
 
 /* Audio player */
@@ -267,7 +270,12 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  opacity: 0.8;
+	padding: 10px;
+	transition: filter .5s ease;
+        border-radius: 5px;
+	cursor: pointer;
+        margin: .5%;
+	filter: brightness(.8);
 }
 
 .collapsible {

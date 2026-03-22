@@ -1,3 +1,4 @@
+import { Csound } from '@csound/browser';
 let csound = null;
 
 const code = `
@@ -17,7 +18,6 @@ endin
 
 async function startSound(note, amp) {
 	if(csound === null) {
-		const {Csound} = await import('./csound.js');
 		csound = await Csound();
 		await csound.setOption('-odac');
 		await csound.compileOrc(code);
@@ -38,10 +38,6 @@ let noteIndex = 0;
 let note, amp, ball;
 let WIDTH = 100;
 let HEIGHT = 100;
-
-function windowResized() {
-	resizeCanvas()	
-}
 
 function setup(){
 	var canvas = createCanvas(windowWidth, windowHeight);
