@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<meta charset="utf-8"/>
+<title>Silêncio de Chão</title> 
+  <script type="module" crossorigin src="../assets/mus_silencio-D4E5MV5X.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/modulepreload-polyfill-Ds44HaI2.js">
+  <link rel="stylesheet" crossorigin href="../assets/style-DHd_uPcj.css">
+</head> 
+
+<body> 
+
+<div class="inner">
+	<h1>Silêncio de Chão</h1>
+
+
+
+	<div style="width:25%;">
+	 <hr noshade="noshade" >
+	</div>	
+	
+	<div id="buttons">
+		<cite>"O poeta promana desses marulhos. Nossa infância, explicou
+			mestre Gilberto Freyre, ainda vai dar canga-pés nos
+			ribeiros por muitos séculos. Nossos centros urbanos
+			ainda não proíbem rios de correr e de ter peixes. E nem
+			irão proibir que relvas cresçam nas encostas dos
+			morros. Ou que as relvas cubram os lábios do chão. Água
+			e chão amorosamente entram-se. O poeta se escura em
+			natureza. E será um escravo da terra, fisiologicamente.
+			Sendo essa uma escravidão redentora.”</cite>
+		<br>(BARROS, 1996, p.319)</p>
+		<br></br>
+		<div class="button-container">
+			<div class="triangle-button-container noSelect">
+				<button class="barro" id="button-start-stop" type="button">
+					<span style="display: inline-block;" id="start">DESCOMEÇAR</span>
+				</button>
+		        	<button class="barro" id="button-lap" type="button">
+			        	<span style="display: inline-block;" id="lap">O FIM DE UM LUGAR</span>
+				</button>
+      			</div>
+		</div>
+		<h1 style="font-size: 60px;" id="what">(...)</h1>
+
+		<div class="time-container">
+			<p class="timer" id="time">00:00:00</p>
+		</div>
+
+		<div class="button-container">
+      			<div class="triangle-button-container noSelect">
+			        <button class="barro" id="button-reset" type="button">
+				        <span id="reset">AVANÇAR PARA O COMEÇO</span>
+			        </button>
+			</div>
+		</div>
+	</div>
+	
+	<div id="laps" class="lap-time-container"></div>
+
+	<br></br>
+
+	<small>ESPAÇO: descomeçar; ENTER: o fim de um lugar; R: avançar para o começo.</small>
+
+<br>
+<br>
+<br>
+<div><p style="font-size:80%">Felippe Brandão</p><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt_BR" target="_blank"><img style="width:12px;height:12px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBhcPLAgiPP2rAAAA40lEQVQY003OsUpbAQBG4e/eKmLaIWoXhYhkKhlCBX0KB3FKoeAzKB3rIJ2STgmhIELHxidwcnDRTaQUGqzpE0hthLro8jsoUs564BwRWUo3v3OVq4zSTT2iCG/13PlmKBree2nLmdRynL3MxBPV9HOaepGOFS03Km7FK/cqDlxMWPdZdC06cq3lr08OfJww67s1DR/M27Fv5J+fqiUolGLSCxQmoTS27NDQrgV9GzZNeeOmSMeqlvF/8WkDl4+7X/P6eXcuX3KSehGaekoDP9D0Tmnb+aNVSzujXOdPfqWdWsQDHuJuZLnIDCUAAAAVdEVYdENyZWF0aW9uIFRpbWUAMi8xNi8xNxGE4e0AAAAldEVYdGRhdGU6Y3JlYXRlADIwMTktMDYtMjNUMTU6NDQ6MDgtMDM6MDB6K7EgAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE5LTA2LTIzVDE1OjQ0OjA4LTAzOjAwC3YJnAAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAASUVORK5CYII=">&nbsp;<img style="width:12px;height:12px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBhcPLAgiPP2rAAAA0ElEQVQY0zXHMSvEAQAH0Hd/Z7iL3MkquVsoGXwbDMoHcNkMMkox3J3FYlN2gw+gbDLplKMum5NcLLrUz+RtT0QW085zhnnLc7ppRJTCmo4fF17QsGlKy50s5CZnqWcy3XQzmVpOc5tGYcfYvk8VVVUVIwe+tOQp2xHZy2MesxeRrfTLah5A0xKaoGem7N+H4OO/hZEVcG5g4Bws+ypc2TCHb79+faNu3XWha8KRWWM9PWN1h6a1S2FVR1x6xbx1ZbvuRWQ+x+nnPcP0c5KFiD8G2WsvggAI/QAAABV0RVh0Q3JlYXRpb24gVGltZQAyLzE2LzE3EYTh7QAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNi0yM1QxNTo0NDowOC0wMzowMHorsSAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDYtMjNUMTU6NDQ6MDgtMDM6MDALdgmcAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M1cbXjNgAAAABJRU5ErkJggg==">&nbsp;<img style="width:12px;height:12px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfjBhcPLAgiPP2rAAAA60lEQVQY0wXBQSsDYACA4feblaLWstlkDruoHWjiqMgubk5ykp9ASbnszEXmYmfkopxw2KQVIUUptXaYXNi0gxwoKfV6HkTMWrJpx44NN8yIBGGcHX44pE6EPIv8sUwDs15ZNm6vY+btMemeFQdw26pxs57a9tUzh015aRGbLolbdpx31mf3Da74ECVGnW7SXFPlixoFEtRJRYEIv+zSxTcQCASACJ+MAnOUmWKGAnd8kOcdN62ZdMQb27a8MGfGW9dx0HMPTNvntJPGHPLYE/uDkKNEjCOeCEywQJtVXhAxbdFHW75575oJkX+gmpE12ypcngAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOS0wNi0yM1QxNTo0NDowOC0wMzowMHorsSAAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTktMDYtMjNUMTU6NDQ6MDgtMDM6MDALdgmcAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAABJRU5ErkJggg=="></a>
+</div>
+</div>
+</body> 
+</html>

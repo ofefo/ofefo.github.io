@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="date" content="2023-10-26" scheme="YYYY-MM-DD">
+        <meta name="viewport" content="width=device-width" />
+        <title>Ubimus</title>
+        <link rel="stylesheet" href="../assets/style-Duvq0sZl.css" type="text/css"
+         media="screen" title="no title" charset="utf-8">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+p {
+	font-size: 1.5em;
+}
+ul{
+	font-size: 1.5em;
+}
+
+/* Style the header */
+header {
+	padding: 10px;
+  text-align: center;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+h1 {font-size: 3em;color:OldLace;}
+h2 {font-size: 2.5em;color:Moccasin} 
+h3 {font-size: 2.3em;color:SandyBrown}
+h4 {font-size: 2em;color:Coral}
+h5 {font-size: 1.8em;color:Tomato}
+div.inner{
+	max-width:100%;
+}
+.centeredimg {
+    display: table-cell;
+    height: 50%;
+    text-align: center;
+    width: 50%;
+    vertical-align: middle;
+}
+img.presentationimg {
+	width:50%;
+	height:50%;
+}
+
+div.presentation{
+	width:90%;
+}
+
+</style>
+	<script charset="utf-8">
+	function show(shown, hidden) {
+      document.getElementById(shown).style.display='block';
+      document.getElementById(hidden).style.display='none';
+      return false;
+    }
+	</script>
+    </head>
+    <body>
+	    <header>
+		    <h1>Development and evaluation of an improvising machine in an ubimus context</h1>
+	    </header>
+
+	    <section>
+		    <div class="inner">
+	    <article>
+		    <div id="Page0" class="presentation" style="text-align: center">
+			    <h2>Felippe Barros (Master of Arts-UFES) and Leandro Costalonga (Electronics and Computing Department-UFES)</h2>
+			    <img style="width:20%;" src="../assets/FelippeBarros-gurCUnro.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    <img style="width:19%;" src="../assets/LeandroCostalonga-BluRsEP2.png">
+				    <p style="margin-top: 1em;">
+				    <a href="#" onclick="return show('Page1','Page0');"><i class="material-icons" style="font-size:36px">arrow_forward</i></a>&nbsp;
+				    </p>
+		    </div>
+
+<div id="Page1" style="display: none;">
+<button type="button" class="collapsible">Abstract</button>
+<div class="content">
+<p>This paper points to connections between the development of improvising
+machines for free improvisation and the ideological background of
+ubimus practices. To this end, we developed an open-source Pure Data system
+named “engenhoca”. The system was evaluated with a non-experimental approach,
+by collecting quantitative and qualitative data from three experienced
+musicians in the genre. Aspects of the evaluation will be discussed concerning
+the system and its relation to the improvisers’ expectations in a genre where
+explicit opinions are usually refrained from being expressed.</p>
+</div>
+<br>
+<div style="text-align:center;">
+	<b>
+		<a href="#" onclick="return show('Page0','Page1');"><i class="material-icons" style="font-size:36px">arrow_back</i></a>&nbsp;
+		<a href="#" onclick="return show('Page2','Page1');"><i class="material-icons" style="font-size:36px">arrow_forward</i></a>
+	</b>
+</div>
+</div>
+
+<div id="Page2" style="display: none">
+<h3>Introduction</h3>
+
+<button type="button" class="collapsible">Free improvisation in ubimus</button>
+<div class="content">
+<ul>
+	<li>Ubiquitous music: intersection of musical creation, ubiquitous
+		computing tools, concerns related to the context and social
+		interaction of participants [Pimenta et al. 2009]</li>
+	<li>Some iniatives have been related to free improvisation [Stolfi et
+		al. 2018] and [Clemente et al. 2020]
+	</li>
+	<li>Anti-formalist approach to music-making, abstaining from explicit
+		use of conventional musical structures and techniques in favor
+		of sonic exploration and interplay between musicians</li>
+</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Musical agents</button>
+<div class="content">
+<ul>
+	<li>Fertile ground for the use of musical agents</li>
+	<li>Class of interactive systems that demonstrate a sense of
+		independence and agency when interacting musically</li>
+	<li>Improvising machines: one of the categories suggested by Tatar and Pasquier (2019)</li>
+	<li>Connections between the development of improvising machines and ubimus</li>
+</ul>
+</div>
+<br>
+
+
+<button type="button" class="collapsible">Engenhoca</button>
+<div class="content">
+<ul>
+	<li>FLOSS improvising machine for free improvisation contexts developed in Pure Data</li>
+	<li>Avaiable at: <a href="https://github.com/ofefo/engenhoca" target="_blank">https://github.com/ofefo/engenhoca</a></li>
+	<li>Evaluation: non-experimental method involving three experienced
+		musicians, focusing on both quantitative and qualitative
+		feedback
+	<li>Our findings offer insights into the expectations of improvisers,
+		often undisclosed when dealing with human partners</li>
+</ul>
+</div>
+<br>
+
+<div style="text-align:center;">
+	<b>
+		<a href="#" onclick="return show('Page1','Page2');"><i class="material-icons" style="font-size:36px">arrow_back</i>
+</a>&nbsp;
+<a href="#" onclick="return show('Page3','Page2');"><i class="material-icons" style="font-size:36px">arrow_forward</i></a>
+	</b>
+</div>
+</div>
+
+<div id="Page3" style="display: none">
+<h3>The system</h3>
+<button type="button" class="collapsible">Four steps for interaction</button>
+<div class="content">
+<ul>
+	<li>Hear what was played, segmenting into phrases</li>
+	<li>Classify sound events into meaningful musical data, storying it in long-term memory</li>
+	<li>Look for local changes in musical texture, deriving decisions about what to do next</li>
+	<li>Sonic responses as synthesized or MIDI output</li>
+</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Event classification</button>
+<div class="content">
+	<ul>
+		<li>Clustering with <i>K-means</i> algorithm</li>
+		<li>Timbre: (0) non-percussive and (1) percussive sound</li>
+		<li>Frequency: (0) low, (1) middle and (2) high registers</li> 
+		<li>Intensity: (0) piano, (1) mezzo and (2) forte</li> 
+		<li>Durations: (0) long, (1) moderate and (2) short notes</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Memory</button>
+<div class="content">
+	<ul>
+		<li>Phrases for each sound parameter are recorded in distinct databases</li>
+		<li>Each phrase is matched into a database according to the statistical mode for parameter values</li>
+		<li>Past and current improvisation sessions</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Selecting phrases from memory</button>
+<div class="content">
+	<ul>
+		<li>Change in musical texture triggers a change in behavior</li>
+		<li>First order-markov chain: approximate playing patterns</li>
+		<li>Example: slow passages are followed by fast paced ones</li>
+		<li>Phrase selected for the parameter can be manipulated by
+			transformative mathematical operations</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Synthesis</button>
+<div class="content">
+	<ul>
+		<li>Audio synthesis is done by FM synthesizer</li>
+		<li>Five sound effects can modify the synthesizer ouput</li>
+		<li>MIDI output is possible</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Network connection</button>
+<div class="content">
+	<ul>
+		<li>Real-time, low latency network interaction</li>
+		<li>Two instances of <i>engenhoca</i></li>
+		<li><i>Quacktrip</i>: a Pure Data implementation of the
+			<i>JackTrip</i> audio transmission tool</li>
+	</ul>
+</div>
+<br>
+<div style="text-align:center;">
+	<b>
+		<a href="#" onclick="return show('Page2','Page3');"><i class="material-icons" style="font-size:36px">arrow_back</i>
+</a>&nbsp;
+<a href="#" onclick="return show('Page4','Page3');"><i class="material-icons" style="font-size:36px">arrow_forward</i></a>
+	</b>
+</div>
+</div>
+
+<div id="Page4" style="display: none">
+<h3>Evaluation of engenhoca</h3>
+<button type="button" class="collapsible">Method</button>
+<div class="content">
+	<ul>
+		<li>Three volunteers, with experience in free improvisation practices</li>
+		<li>Three improvisation sessions and a set of questions after each one</li>
+		<li>Five-alternative Linkert scale</li>
+		<li>Inspired by Hsu and Sosnick (2009)</li>
+		<li>Qualitative evaluation with one paragraph impressions</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Results</button>
+<div class="content">
+	<ul>
+		<li>Satisfied with timbre, rhythmic and melodic aspects; Strong
+			satisfaction with long-term responsiveness</li>
+		<li>Worst evaluation: short-term responsiveness</li>
+		<li>Musicians made <i>adjustments</i> to the way the machine played</li>
+		<li>Greater dispersion of results for short and long-term
+			responsiveness</li>
+		<li>Musicans said to modify their interaction approach after each session</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Interpretation of results</button>
+<div class="content">
+	<ul>
+		<li>Struggle to access numerous experienced improvisers</li>
+		<li>Participation of inexperienced musicians could allow for
+			more data, possibly providing statistically significant
+			results, but might be difficult for a broader population 
+			of musicians that are not familiar with free improvisation</li>
+		<li>Opinions expressed in this evaluation will only be
+			understood as initial hypothesis to be verified in future work</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Evaluation difficulty</button>
+<div class="content">
+	<ul>
+		<li>Lower SD in timbral, melodic and rhythmic aspects</li>
+		<li>Larger SD in responsiveness evlatuations</li>
+		<li>To evaluate interaction aspects might be more difficult than delimited musical materials</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Inconsistency with what is <i>de facto</i> implemented</button>
+<div class="content">
+	<ul>
+		<li>Banerji (2018): musicians suggested learning capabilities in systems without such functionalities</li>
+		<li>Musicians might be the ones adapting to machine behavior</li>
+		<li>Zajonc (1968): exposure effect could explain changes in perception</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Exposure effect?</button>
+<div class="content">
+	<ul>
+		<li>Last improvisation session had greatest satisfaction</li>
+		<li>Increase in evaluation metrics did not occur linearly</li>
+		<li>Musicians expressed a tendency to adapt their playing, in line with Banerji (2018)</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Expectations in improvisation</button>
+<div class="content">
+	<ul>
+		<li>Banerji (2012): evaluations might reveal "aesthetic
+			preferences, but more crucially, their expectations and
+			understandings of improvisation as social interaction"</li>
+		<li>One musician observed better responses to staccato textures</li>
+		<li>Unlike other parameters, articulation was directly replicated by the machine</li>
+		<li>One musician expressed the system did not behave like a human, while other thought it did</li>
+		<li>To "control" the system seemed to be fruitless, but was
+			tried by one of the musicians. An interaction model
+			that might differ from those experienced with
+		humans</li>
+	</ul>
+</div>
+<br>
+<div style="text-align:center;">
+	<b>
+		<a href="#" onclick="return show('Page3','Page4');"><i class="material-icons" style="font-size:36px">arrow_back</i></a>&nbsp;
+		<a href="#" onclick="return show('Page5','Page4');"><i class="material-icons" style="font-size:36px">arrow_forward</i></a>
+	</b>
+</div>
+</div>
+
+<div id="Page5" style="display: none">
+<h3>Discussion</h3>
+<button type="button" class="collapsible">Results</button>
+<div class="content">
+	<ul>
+		<li>Satisfaction with timbres and long-term responsiveness</li>
+		<li>Dissatisfaction with short-term changes</li>
+		<li>Suggested good potential for the system to facilitate the discovery of new satisfying musical combinations</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Evaluation</button>
+<div class="content">
+	<ul>
+		<li>To improvise with machines is distinct than to improvise with humans</li>
+		<li>Do we want it to be equal?</li>
+		<li>Quantitatively assess complex musical interactions might be more difficult than to evaluate aesthetic materials</li>
+		<li>Novel evaluations could be done with larger pools of
+			participants, with the use of control groups and
+			investigating whether ubimus theoretical approach makes
+			sense for improvisers</li>
+	</ul>
+</div>
+<br>
+
+<button type="button" class="collapsible">Conclusion</button>
+<div class="content">
+	<ul>
+		<li>Engenhoca could be a potential tool for various artistic endeavors</li>
+		<li>Designed to be acessible and adaptable</li>
+		<li>Network connectivity can bring a broader scope for musical interactions</li>
+		<li>FLOSS status enhances its potential for widespread improvements and modifications</li>
+	</ul>
+</div>
+<br>
+
+<div style="text-align:center;">
+	<b>
+		<a href="#" onclick="return show('Page4','Page5');"><i class="material-icons" style="font-size:36px">arrow_back</i></a>&nbsp;
+	</b>
+</div>
+</div>
+</div>
+	    </article>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</body>
+</html>
