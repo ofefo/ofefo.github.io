@@ -12,8 +12,8 @@ const rootHtmlFiles = readdirSync(__dirname)
 
 export default defineConfig({
   build: {
-    rollupOptions: {
-      input: rootHtmlFiles
-    }
-  }
+	  rollupOptions: {
+		input: rootHtmlFiles}
+  },
+	base: "./"
 })
