@@ -1,4 +1,5 @@
 import { Csound } from '@csound/browser';
+import csdContent from '../csound/ball.csd?raw';
 let csound = null;
 
 window.setup = setup;
@@ -6,26 +7,11 @@ window.draw = draw;
 window.mousePressed = mousePressed;
 window.windowResized = windowResized;
 
-const code = `
-sr = 44100
-ksmps = 32
-nchnls = 2
-0dbfs = 1
-
-instr 1
-	kEnv = linseg(0, .001, .5, p3/2, .1, p3/2, 0)
-	aOsc = poscil(kEnv*p4, mtof(p5))
-	aLeft, aRight pan2 tanh(aOsc), p6
-    
-	outs aLeft, aRight
-endin
-`
-
 async function startSound(note, amp) {
 	if(csound === null) {
 		csound = await Csound();
 		await csound.setOption('-odac');
-		await csound.compileOrc(code);
+		await csound.compileCSD(csdContent);
 		await csound.start();
 	}
 }
