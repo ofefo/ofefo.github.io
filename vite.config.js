@@ -1,19 +1,35 @@
 import { resolve } from 'path'
-import { readdirSync } from 'fs'
+import { readdirSync, statSync } from 'fs'
 import { defineConfig } from 'vite'
 
-const rootHtmlFiles = readdirSync(__dirname)
-  .filter(file => file.endsWith('.html'))
-  .reduce((entries, file) => {
-    const name = file.replace('.html', '');
-    entries[name] = resolve(__dirname, file);
-    return entries;
-  }, {});
+function getHtmlFiles(dir, fileList = []) {
+  const files = readdirSync(dir);
+  for (const file of files) {
+    const fullPath = resolve(dir, file);
+    
+    if (file === 'node_modules' || file === 'dist' || file.startsWith('.')) continue;
+    
+    if (statSync(fullPath).isDirectory()) {
+      getHtmlFiles(fullPath, fileList);
+    } else if (file.endsWith('.html')) {
+      fileList.push(fullPath);
+    }
+  }
+  return fileList;
+}
+
+const allHtmlFiles = getHtmlFiles(__dirname);
+const inputFiles = allHtmlFiles.reduce((entries, file) => {
+  const name = file.replace(__dirname + '/', '').replace('.html', '').replace(/\//g, '_');
+  entries[name] = file;
+  return entries;
+}, {});
 
 export default defineConfig({
   build: {
-	  rollupOptions: {
-		input: rootHtmlFiles}
+    rollupOptions: {
+      input: inputFiles
+    }
   },
-	base: "./"
+  base: "./"
 })

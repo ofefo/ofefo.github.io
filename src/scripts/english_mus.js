@@ -23,3 +23,4 @@ function English() {
 	document.getElementById("cadaeco-text").innerHTML="<i>Soundscapes of chaos and cosiness<br>at an urban cave</i><br><br>Superposition of everyday sounds and instrumental improvisations. Featuring Luís Israel in \"chamada perdida\".<br><br>Recorded with a smartphone.<br>Cover photo by Arthur Moreira.<br>July - December 2015";
 	document.getElementById("quatrocordas-text").innerHTML="<i>Four short improvisations with a guitar lacking two strings</i><br><br>Recorded with the computer microphone.<br>Cover in watercolor on paper<br>and digital editing.<br>May 2015";
 }
+window.English = English;
