@@ -6,7 +6,7 @@ let isCsoundReady = false;
 
 let activeNotes = {};
 
-// We added 'isBlack' for color/height, and 'pos' to space them like a real piano
+// Colors and position as in a piano
 const keys = [
     { char: 'a', midi: 60, isBlack: false, pos: 0 },
     { char: 'w', midi: 61, isBlack: true,  pos: 0.5 },
@@ -49,9 +49,8 @@ function playNote(midiNote, keyElement, keyChar) {
     csound.inputMessage(`i 1 0 0.8 ${midiNote} 0.5`);
 }
 
-// --- DOM Event Listeners ---
+// DOM Event Listeners
 document.getElementById('start-btn').addEventListener('click', async (e) => {
-    e.target.innerText = "Loading Csound...";
     e.target.disabled = true;
 
     await startCsound();
@@ -84,7 +83,6 @@ document.addEventListener('keydown', (event) => {
     }
 });
 
-// --- p5.js Sketch ---
 window.setup = function() {
     let canvas = createCanvas(windowWidth*.9, 800);
     canvas.parent(document.body);
