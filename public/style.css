@@ -269,6 +269,10 @@ input[type=submit]:hover {
   opacity: 0.8;
 }
 
+ul li {padding: 10px 0px;}
+ul li ul li {padding: 0px;}
+ul li ul {margin-top: 0px;}
+
 /* https://fonts.googleapis.com/css?family=Geo */
 @font-face {  font-family: 'Geo';  font-style: normal;  font-weight: 400;  src: local('Geo'), local('Geo-Regular'), url(https://fonts.gstatic.com/s/geo/v9/lutaIpfXBU1nwBiNdnFGUw.woff2) format('woff2');  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;}
 /* https://fonts.googleapis.com/css?family=Open+Sans */
