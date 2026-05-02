@@ -1,0 +1,31 @@
+---
+// Get the current page URL (e.g., "/bio" or "/mus")
+const currentPath = Astro.url.pathname;
+
+// A small helper function to decide if a link is active
+function isActive(path) {
+  return currentPath === path || currentPath === path + '/';
+}
+---
+
+<nav>
+  <h3>
+    {isActive('/') ? <span></span> : <a href="/"><<<</a>}&nbsp;
+
+    {isActive('/bio') ? <span style="color: #ff6e00;">bio</span> : <a href="/bio">bio</a>}&nbsp;
+    
+    {isActive('/mus') ? <span style="color: #ff6e00;">mus</span> : <a href="/mus">mus</a>}&nbsp;
+    
+    {isActive('/img') ? <span style="color: #ff6e00;">img</span> : <a href="/img">img</a>}&nbsp;
+    
+    {isActive('/blog') ? <span style="color: #ff6e00;">blog</span> : <a href="/blog">blog</a>}&nbsp;
+    
+    {isActive('/feed') ? <span style="color: #ff6e00;">feed</span> : <a href="/feed">feed</a>}&nbsp;
+  </h3>
+</nav>
+
+<style>
+  span {
+    display: inline-block;
+  }
+</style>
