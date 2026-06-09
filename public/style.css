@@ -11,6 +11,61 @@ body {
 	margin-bottom: 5%;
 }
 
+.musdivs {
+  margin-bottom: 25vh;
+}
+
+.musheaderpt {
+  margin-bottom: 5vh;
+  text-align: left;
+}
+
+.musheaderen {
+  margin-bottom: 3vh;
+  text-align: right;
+}
+
+.muslinks {
+  text-align: center;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 3vh;
+}
+
+.muslinks img {
+  height: 40px;
+  width: auto; 
+  margin: 0;   
+}
+
+.muslinks a:hover {
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.musdivs img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 1st, 4th, 7th, etc. items align left */
+.musdivs:nth-of-type(3n+1) {
+  text-align: left;
+}
+
+/* 2nd, 5th, 8th, etc. items align center */
+.musdivs:nth-of-type(3n+2) {
+  text-align: center;
+}
+
+/* 3rd, 6th, 9th, etc. items align right */
+.musdivs:nth-of-type(3n) {
+  text-align: right;
+}
+
 div.inner {
 	max-width: 782px;
 	width: 100%;

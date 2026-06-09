@@ -2,6 +2,13 @@
 import Navigation from '../components/Navigation.astro';
 
 const { frontmatter } = Astro.props;
+
+const { pathname } = Astro.url;
+
+const currentPath = pathname.replace(/\/$/, "");
+
+const hideFooterPages = ["", "/index", "/bio", "/feed"];
+const showFooter = !hideFooterPages.includes(currentPath);
 ---
 
 <!DOCTYPE html>
@@ -23,9 +30,16 @@ const { frontmatter } = Astro.props;
 	
     <Navigation />
 
-	<br>
-    
     <slot />
+
+    {showFooter && (
+      <footer>
+        <p style="font-size:small">Felippe Brandão</p>
+        <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">
+          <img style="width:10%; height:10%" src="/img/cc.png" alt="CC License" />
+        </a>
+      </footer>
+    )}
 
 </div>
 </body>
