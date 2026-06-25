@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@astrojs/rss": "^4.0.18",
+    "@csound/browser": "^7.0.0-beta31",
     "astro": "^6.2.1"
   }
 }
