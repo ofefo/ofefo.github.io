@@ -170,6 +170,40 @@ img.bandcamp:hover {
 	color: #ff6e00;
 }
 
+/* bandcamp row: image + text side by side */
+.musdivs .bandcamp-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.musdivs .bandcamp-row a {
+  width: 50%;
+  flex-shrink: 0;
+}
+.musdivs .bandcamp-row a img {
+  width: 100%;
+  border: 3px solid transparent;
+  transition: border-color 0.2s ease;
+}
+.musdivs .bandcamp-row a:hover img {
+  border-color: #ff6e00;
+}
+.musdivs .bandcamp-row .bandcamp-text {
+  flex: 1;
+}
+
+/* tighter paragraph spacing on mus page */
+.musdivs .pt p,
+.musdivs .en p {
+  margin: 0.3em 0;
+}
+
+/* Language toggle */
+.en { display: none; }
+.pt { display: block; }
+body.en-active .en { display: block; }
+body.en-active .pt { display: none; }
+
 /*fotos do calendario*/
 img.datas {
 	width: 80%;
@@ -227,6 +261,28 @@ img.miniver:hover {
 img.link:hover {
 	box-shadow: 0 0 2px 1px;
 	color: #ff6e00;
+}
+
+/* img gallery: orange border on hover, white flash on click */
+#img-container a img {
+  border: 3px solid transparent;
+  transition: border-color 0.2s ease;
+}
+#img-container a:hover img {
+  border-color: #ff6e00;
+}
+#img-container a:active img {
+  border-color: #ffffff;
+}
+
+/* bandcamp: orange border on hover, white flash on click */
+.musdivs .bandcamp-row a:active img {
+  border-color: #ffffff;
+}
+
+/* social icons: white flash on click */
+.muslinks a:active img {
+  box-shadow: 0 0 0 2px #ffffff;
 }
 
 /* borda do perfil da bio */
@@ -302,14 +358,22 @@ button.barro {
         cursor: pointer;                   
 }
 
-button[type=english] {
-	background-color: #ffb84d;
-	color: black;
-	border: none;
+button {
+	background: none;
+	color: #ffb84d;
+	border: 1px solid #ffb84d;
+	cursor: pointer;
+	padding: 4px 8px;
 }
 
-button[type=english]:hover {
-	opacity=0.8;
+button:hover {
+	color: #ff6e00;
+	border-color: #ff6e00;
+}
+
+button:active {
+	color: #ffffff;
+	border-color: #ffffff;
 }
 
 /* Audio player */

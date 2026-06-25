@@ -3,6 +3,8 @@ title: ". blog . tática da buzina"
 layout: ../../layouts/BlogPostLayout.astro
 ---
 
+#### tática da buzina
+
 será que alguém, algum dia, mudou sua intenção de voto graças a uma carreata política?
 
 *Caramba! Veio logo buzinar na minha rua...*

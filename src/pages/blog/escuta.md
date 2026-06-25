@@ -3,6 +3,8 @@ title: ". blog . escuta"
 layout: ../../layouts/BlogPostLayout.astro
 ---
 
+#### escuta
+
 Pessoas discutem próximo a mim.
 Estou usando protetor auricular, mas ainda escuto, falam alto.
 Creio que ficarei sabendo mais do que jamais quis ser informado sobre o tema.

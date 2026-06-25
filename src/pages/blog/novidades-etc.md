@@ -3,6 +3,8 @@ title: ". blog . novidades, etc."
 layout: ../../layouts/BlogPostLayout.astro
 ---
 
+#### novidades, etc.
+
 atualizei a página *musical* com três trabalhos finalizados nos últimos meses:
 
 <ol>

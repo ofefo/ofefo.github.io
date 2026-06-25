@@ -4,7 +4,7 @@ layout: ../layouts/BaseLayout.astro
 ---
 
 <div style="text-align: right;">
-  RSS FEED
+  <a href="/rss.xml">RSS FEED</a>
 </div>
 
 <center>

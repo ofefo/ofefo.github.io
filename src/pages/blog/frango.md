@@ -3,6 +3,8 @@ title: ". blog . frango"
 layout: ../../layouts/BlogPostLayout.astro
 ---
 
+#### frango
+
 descobri que a palavra *frango* é uma derivação de *frangão*, que não possui etimologia certa. é notável que um funciona muito bem como aumentativo do outro. até ontem sempre acreditei que os aumentativos eram os que derivavam, e não o contrário.
 
 *galo* vem do latim *gallus* e é a denominação para o animal mesmo, com a diferenciação do sexo do bicho adulto. existe em espanhol e italiano como *gallo* (e *gallina*).

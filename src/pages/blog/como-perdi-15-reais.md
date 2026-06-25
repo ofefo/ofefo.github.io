@@ -3,6 +3,8 @@ title: ". blog . Como perdi 15 reais"
 layout: ../../layouts/BlogPostLayout.astro
 ---
 
+#### Como perdi 15 reais
+
 Recentemente, recebi uma oferta para cair em um golpe via zapzap que não pude negar. Tentei ver até onde conseguiria chegar respondendo da melhor maneira possível. Infelizmente, pararam de me responder justamente na hora de receber meu primeiro pagamento. Prints dessa profunda interação podem ser vistos abaixo:
 
 ![print 1](/blog/como-perdi-15-reais/01.jpeg)

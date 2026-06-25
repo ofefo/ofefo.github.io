@@ -3,6 +3,8 @@ title: ". blog . Introdução à improvisação livre"
 layout: ../../layouts/BlogPostLayout.astro
 ---
 
+#### Introdução à improvisação livre
+
 Organizarei, junto de Gabriel Amorim, um minicurso introdutório a práticas de improvisação livre na *XI Jornada Integrada de Extensão e Cultura*, a acontecer na UFES na terceira semana de Outubro (dia 16 e dia 20 pela manhã).
 
 Por meio de exercícios, escutas e conversas, apresentaremos abordagens possíveis para se iniciar a prática do gênero.

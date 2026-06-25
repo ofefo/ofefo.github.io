@@ -46,5 +46,16 @@ const showFooter = !hideFooterPages.includes(currentPath);
     )}
 
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="http"]');
+    for (const link of links) {
+      if (!link.hostname.includes('ofefo.com.br') && !link.hostname.includes('localhost')) {
+        link.setAttribute('target', '_blank');
+        link.setAttribute('rel', 'noopener noreferrer');
+      }
+    }
+  });
+</script>
 </body>
 </html>

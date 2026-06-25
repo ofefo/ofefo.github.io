@@ -3,6 +3,8 @@ title: ". blog . versões alternativas do bbb"
 layout: ../../layouts/BlogPostLayout.astro
 ---
 
+#### versões alternativas do bbb
+
 <ol>
 <li>um dos participantes é um assassino condenado que cumpria pena encarcerado antes de chegar ao programa.
 <br>a cada paredão, os próprios participantes tentam encontrar o criminoso.

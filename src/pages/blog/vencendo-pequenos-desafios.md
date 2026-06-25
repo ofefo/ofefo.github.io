@@ -3,6 +3,8 @@ title: ". blog . Vencendo pequenos desafios"
 layout: ../../layouts/BlogPostLayout.astro
 ---
 
+#### Vencendo pequenos desafios
+
 Esqueço minha garrafa d'água ao lado do aparelho anterior.
 Tenho que atravessar a academia para buscá-la.
 Consigo retornar ao aparelho em que estou agora antes que alguém o ocupe?

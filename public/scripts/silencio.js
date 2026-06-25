@@ -73,7 +73,6 @@ function resetTime() {
 	isStarted = false;
 	elapsedTime = 0;
 	lapCount = 0;
-	startCount = 0;
 
   document.getElementById('what').innerHTML = "(...)";
   document.getElementById('time').innerHTML = "00:00:00";
