@@ -16,31 +16,24 @@ O que não quer dizer que aqui não aconteça nada! Clique com o mouse e descubr
 <div id="canvas"></div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js" is:inline></script>
+<script src="https://g-ubimus.github.io/litePlay.js/src/core/litePlay.constants.js" is:inline></script>
 
 <script>
-import { Csound } from '@csound/browser';
-import csdContent from '../csound/ball.csd?raw';
+let engineReady = false;
+let engineStarting = false;
 
-let csound = null;
-
-async function startSound() {
-  if (csound === null) {
-    csound = await Csound();
-    await csound.setOption('-odac');
-    await csound.compileCSD(csdContent);
-    await csound.start();
+function startAudio() {
+  if (!engineReady && !engineStarting) {
+    engineStarting = true;
+    lpRun(() => { engineReady = true; });
   }
-}
-
-async function playNote(note, amp, pan) {
-  await csound.inputMessage('i 1 0 1 ' + amp + ' ' + note + ' ' + pan);
 }
 
 let balls = [];
 
-let scale = [60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82];
+let scale = [C4, D4, E4, Fs4, Gs4, As4, C5, D5, E5, Fs5, Gs5, As5];
 
-let note, amp;
+let amp;
 let WIDTH = 100;
 let HEIGHT = 100;
 
@@ -67,7 +60,7 @@ window.draw = function () {
 };
 
 window.mousePressed = function () {
-  startSound();
+  startAudio();
   let ball = new Ball(mouseX, mouseY);
   balls.push(ball);
 };
@@ -105,9 +98,10 @@ class Ball {
     }
     if (bounced) {
       let randomNoteIndex = int(random(0, scale.length));
-      note = scale[randomNoteIndex];
-      let pan = constrain(this.x / windowWidth, 0, 1);
-      playNote(note, amp, pan);
+      let note = scale[randomNoteIndex];
+      if (engineReady) {
+        lp.play({what: note, howLoud: amp, onSomething: lp.xylophone});
+      }
       this.n += 1;
     }
     this.x = this.x + this.acc1;
