@@ -1,5 +1,5 @@
 ---
-title: "mus"
+title: ". mus"
 layout: ../layouts/BaseLayout.astro
 ---
 
@@ -26,6 +26,9 @@ scores and electronic pieces.
 By clicking on the images, you'll be redirected to my bandcamp page.
 
 Enjoy!
+
+<script is:inline src="/public/scripts/english_mus.js"></script>
+PS: to read the page in English: <span><button id="english" type="english" style="display:inline;" onclick="English()">Click here!</button></span>
 </div>
 
 <div class="muslinks">
@@ -37,7 +40,7 @@ Enjoy!
 
 </div>
 
-<div class="musdivs">
+<div class="musdivs" id="">
 
 #### [#](/mus#silencio) Silêncio de Chão (2021)
 *Vídeo-performance em colaboração com o ensemble GILU*

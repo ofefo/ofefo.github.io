@@ -1,5 +1,5 @@
 ---
-title: "feed"
+title: ". feed"
 layout: ../layouts/BaseLayout.astro
 ---
 
@@ -17,6 +17,9 @@ layout: ../layouts/BaseLayout.astro
 #### foi
 
 </center>
+
+* **19/06/2026:** Vincent Reichenberger toca com a [engenhoca](https://ofefo.com.br/mus/engenhoca).
+  * Na Linux Audio Conference 2026, Maynooth, IE.
 
 * **30/11/2024:** Narjara Portugal convida Nó Solto para uma Aula/JAM de contato improvisação.
   * No Dourado Cais das Artes.
