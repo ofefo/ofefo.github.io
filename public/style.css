@@ -140,6 +140,15 @@ br {
 */
 
 /* IMAGENS */
+
+/* photo project pages */
+.project img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%;
+    border: 3px solid #ffffff;
+}
+
 /* perfil index */
 img.idx {
 	width: 355px; /*355px*/
@@ -197,6 +206,17 @@ img.miniver:hover {
 	box-shadow: 0 0 2px 1px;
 	color: #ff6e00;
 	width: 100%;
+}
+
+#img-container a[href="/img/noite"] img {
+    max-height: 240px;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    #img-container a[href="/img/noite"] img {
+        max-height: 90px;
+    }
 }
 
 /* borda demais imagens com link */

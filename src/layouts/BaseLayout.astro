@@ -22,7 +22,11 @@ const showFooter = !hideFooterPages.includes(currentPath);
 </head> 
 <body> 
 <div class="inner">
-	<h1>fefo {frontmatter.title}</h1>
+	{frontmatter.customTitle ? (
+		<h1 set:html={frontmatter.customTitle} />
+	) : (
+		<h1>fefo {frontmatter.title}</h1>
+	)}
 	
 	<div style="width:50%;">
 	    <hr noshade="noshade"/>  
