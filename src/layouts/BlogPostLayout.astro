@@ -1,0 +1,37 @@
+---
+const { frontmatter } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta charset="utf-8"/> 
+	<title>fefo {frontmatter.title}</title>   
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+</head> 
+<body> 
+<div class="inner">
+	<h1>fefo . blog</h1>
+	
+	<div style="width:50%;">
+	    <hr noshade="noshade"/>  
+	</div>
+	
+	<nav>
+		<h3><a href="/blog"><<<</a></h3>
+	</nav>
+
+    <slot />
+
+    <footer>
+      <p style="font-size:small">Felippe Brandão</p>
+      <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">
+        <img style="width:10%; height:10%" src="/img/cc.png" alt="CC License" />
+      </a>
+    </footer>
+
+</div>
+</body>
+</html>

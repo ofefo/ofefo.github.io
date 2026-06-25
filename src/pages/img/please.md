@@ -1,22 +1,25 @@
 ---
 title: ". img . Please"
-customTitle: "<span class='please-word'>fefo . img . Please</span><span class='overlay'><span class='please-emoji'>&#128683;</span></span>"
+customTitle: "fefo . img . <span class='please-group'>Please<span class='overlay'><span class='please-emoji'>&#128683;</span></span></span>"
 layout: ../../layouts/BaseLayout.astro
 ---
 
 <style>
-h1 { position: relative; }
-h1 .overlay {
+.please-group {
+    position: relative;
+    display: inline-block;
+}
+.please-group .overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
+    top: 0; left: 0; width: 100%; height: 100%;
     opacity: 0;
     transition: .5s ease;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-h1:hover .overlay { opacity: 1; }
-h1 .please-emoji { font-size: 100px; }
+.please-group:hover .overlay { opacity: 1; }
+.please-emoji { font-size: 50px; }
 </style>
 
 <div class="project">
