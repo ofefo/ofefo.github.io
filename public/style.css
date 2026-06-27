@@ -192,6 +192,15 @@ img.bandcamp:hover {
   flex: 1;
 }
 
+@media (max-width: 768px) {
+  .musdivs .bandcamp-row {
+    flex-direction: column;
+  }
+  .musdivs .bandcamp-row a {
+    width: 100%;
+  }
+}
+
 /* tighter paragraph spacing on mus page */
 .musdivs .pt p,
 .musdivs .en p {
