@@ -6,12 +6,12 @@ layout: ../layouts/BaseLayout.astro
 <div id="img-container">
 <div>
 
-[![prismaticos 2025/12](/img/mini/prismaticos.jpeg)](/img/prismaticos)
+[![prismaticos 2025/12](/img/mini/prismaticos.jpg)](/img/prismaticos)
 
 </div>
 <div>
 
-[![pies 2025/07](/img/mini/pies.jpeg)](/img/pies)
+[![pies 2025/07](/img/mini/pies.jpg)](/img/pies)
 
 </div>
 <div>
