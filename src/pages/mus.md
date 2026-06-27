@@ -43,7 +43,16 @@ Enjoy!
 <div class="musdivs">
 
 #### [#](/mus#silencio) Silêncio de Chão (2021)
+<div class="pt">
+
 *Vídeo-performance em colaboração com o ensemble GILU*
+
+</div>
+<div class="en">
+
+*Video performance in collaboration with the ensemble GILU*
+
+</div>
 
 <iframe width="100%" height="315"
 src="https://www.youtube-nocookie.com/embed/_A87U3jC9MM" title="YouTube video
@@ -87,9 +96,20 @@ The program can be found by [clicking here](/mus/silencio).
 <div class="musdivs">
 
 #### [#](/mus#brutal) BRUTAL (2021)
+<div class="pt">
+
 *Escultura interativa*
 
 Cimento, canudos biodegradáveis, borracha, epóxi, potenciômetros, sensor ultrassônico, Arduino Nano e SuperCollider
+
+</div>
+<div class="en">
+
+*Interactive sculpture*
+
+Cement, biodegradable straws, rubber, epoxy, potentiometers, ultrasonic sensor, Arduino Nano and SuperCollider
+
+</div>
 
 <img src="/mus/brutal.jpg" style="max-width: 80%;">
 
@@ -125,7 +145,16 @@ To access photos and a presentation video, [click here](/mus/brutal).
 <div class="musdivs">
 
 #### [#](/mus#engenhoca) engenhoca (2021)
+<div class="pt">
+
 *Máquina improvisadora*
+
+</div>
+<div class="en">
+
+*Improvising machine*
+
+</div>
 
 <img src="/mus/engenhoca/01.jpg" style="max-width: 80%;">
 
@@ -156,7 +185,16 @@ To download the patch and listen to recordings with the system, [click here](/mu
 <div class="musdivs">
 
 #### [#](/mus#welcomebach) welcomeBach (2020)
+<div class="pt">
+
 *Sua dose diária de contraponto*
+
+</div>
+<div class="en">
+
+*Your daily dose of counterpoint*
+
+</div>
 
 <div class="pt">
 
@@ -193,7 +231,16 @@ Contributions are welcome!
 <div class="musdivs">
 
 #### [#](/mus#emersao) emersão (2020), 8'
+<div class="pt">
+
 *Paisagem sonora*
+
+</div>
+<div class="en">
+
+*Soundscape composition*
+
+</div>
 
 <div class="bandcamp-row">
 <a href="https://ofefo.bandcamp.com/track/emers-o"><img src="/mus/emersao.jpg" alt="emersão"></a>
@@ -208,8 +255,6 @@ Dezembro 2019
 
 </div>
 <div class="en">
-
-*Soundscape composition*
 
 As they get closer to the surface, divers hear sounds transmuting...
 
@@ -226,9 +271,20 @@ December 2019
 <div class="musdivs">
 
 #### [#](/mus#ping) PING (2019), 15'
+<div class="pt">
+
 *Vídeo-jogo controlado por improvisos musicais*
 
 Elaborado com Caio Campos
+
+</div>
+<div class="en">
+
+*Interactive audiovisual system controled by musical improvisation*
+
+Developed with Caio Campos
+
+</div>
 
 <video width="100%" controls><source src="/mus/ping.mp4" type="video/mp4"></video>
 
@@ -266,7 +322,16 @@ interaction between musicians and the system.
 <div class="musdivs">
 
 #### [#](/mus#agora) ágora (2019)
+<div class="pt">
+
 *Jogo para ensemble de improvisação*
+
+</div>
+<div class="en">
+
+*Game for improvisation ensemble*
+
+</div>
 
 <div class="pt">
 
@@ -302,7 +367,16 @@ a concert at the first *FIM: Festival Improvisada Música*, in November 2019.
 <div class="musdivs">
 
 #### [#](/mus#decampo) decampo (2019), 6'
+<div class="pt">
+
 *Gravações de campo selecionadas*
+
+</div>
+<div class="en">
+
+*Selected field recordings*
+
+</div>
 
 <div class="bandcamp-row">
 <a href="https://ofefo.bandcamp.com/album/decampo"><img src="/mus/decampo.jpg" alt="decampo"></a>
@@ -332,7 +406,16 @@ January - March 2019
 <div class="musdivs">
 
 #### [#](/mus#carnaval) carnaval (2019), 1'
+<div class="pt">
+
 *Ruído festivo*
+
+</div>
+<div class="en">
+
+*Festive noise*
+
+</div>
 
 <div class="pt">
 
@@ -356,7 +439,16 @@ March 2019
 <div class="musdivs">
 
 #### [#](/mus#bifurcacoes) bifurcações (2018), 7'
+<div class="pt">
+
 *Flauta e live-electronics*
+
+</div>
+<div class="en">
+
+*Flute and live-electronics*
+
+</div>
 
 <div class="pt">
 
@@ -392,7 +484,16 @@ Reduced stereo version:
 <div class="musdivs">
 
 #### [#](/mus#praca6) praçaseis (2018), 46'
+<div class="pt">
+
 *Música de ruído em praça pública*
+
+</div>
+<div class="en">
+
+*Noise music at a public square*
+
+</div>
 
 <div class="bandcamp-row">
 <a href="https://ofefo.bandcamp.com/album/pra-aseis"><img src="/mus/praçaseis.jpg" alt="praçaseis"></a>
@@ -431,7 +532,16 @@ June 2018
 <div class="musdivs">
 
 #### [#](/mus#dysgraphia) dysgraphia (2018), 3'
+<div class="pt">
+
 *Acusmática defeituosa*
+
+</div>
+<div class="en">
+
+*Defective acousmatic*
+
+</div>
 
 <div class="bandcamp-row">
 <a href="https://ofefo.bandcamp.com/track/dysgraphia"><img src="/mus/dysgraphia.jpg" alt="dysgraphia"></a>
@@ -463,7 +573,16 @@ March 2018
 <div class="musdivs">
 
 #### [#](/mus#maestrandom) maestRandom (2017), 10'
+<div class="pt">
+
 *Sorteador de diretrizes musicais para improviso em grupo*
+
+</div>
+<div class="en">
+
+*Musical instructions dice*
+
+</div>
 
 <div class="pt">
 
@@ -496,7 +615,16 @@ the ensemble members.
 <div class="musdivs">
 
 #### [#](/mus#cadaeco) cadaeco (2016), 24'
+<div class="pt">
+
 *Paisagens do caos e do aconchego de uma caverna urbana*
+
+</div>
+<div class="en">
+
+*Soundscapes of chaos and cosiness at an urban cave*
+
+</div>
 
 <div class="bandcamp-row">
 <a href="http://ofefo.bandcamp.com/album/cadaeco"><img src="/mus/cadaeco.jpg" alt="cadaeco"></a>
@@ -536,7 +664,16 @@ July - December 2015
 <div class="musdivs">
 
 #### [#](/mus#quatrocordas) quatrocordas (2015), 5'
+<div class="pt">
+
 *Quatro improvisos curtos com um violão deficiente de duas cordas*
+
+</div>
+<div class="en">
+
+*Four short improvisations with a guitar lacking two strings*
+
+</div>
 
 <div class="bandcamp-row">
 <a href="http://ofefo.bandcamp.com/album/quatrocordas"><img src="/mus/quatrocordas.jpg" alt="quatrocordas"></a>
