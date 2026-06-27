@@ -1,7 +1,31 @@
 ---
 title: ". img . dropped"
+    customTitle: "fefo . img . <span class='drop-l' style='--y:35px;--r:15deg;--s:0s'>d</span>
+<span class='drop-l' style='--y:48px;--r:-20deg;--s:0.1s'>r</span>
+<span class='drop-l' style='--y:30px;--r:35deg;--s:0.2s'>o</span>
+<span class='drop-l' style='--y:52px;--r:-10deg;--s:0.32s'>p</span>
+<span class='drop-l' style='--y:38px;--r:45deg;--s:0.4s'>p</span>
+<span class='drop-l' style='--y:55px;--r:-30deg;--s:0.5s'>e</span>
+<span class='drop-l' style='--y:42px;--r:20deg;--s:0.6s'>d</span>"
 layout: ../../layouts/BaseLayout.astro
 ---
+
+<style>
+.dropped-word {
+  display: inline-block;
+  position: relative;
+}
+.drop-l {
+  display: inline-block;
+  animation: dropFall 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: var(--s);
+}
+@keyframes dropFall {
+  0%   { transform: translateY(-80px) rotate(-15deg); opacity: 0; }
+  60%  { transform: translateY(calc(var(--y) - 10px)) rotate(calc(var(--r) - 5deg)); opacity: 1; }
+  100% { transform: translateY(var(--y)) rotate(var(--r)); }
+}
+</style>
 
 <div class="project">
 
