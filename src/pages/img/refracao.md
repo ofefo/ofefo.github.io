@@ -1,6 +1,6 @@
 ---
 title: ". img . refração"
-customTitle: "fefo . img . &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='refracao' aria-label='refração'></span>"
+customTitle: "fefo . img . &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class='refracao' aria-label='refração'></span>"
 layout: ../../layouts/BaseLayout.astro
 ---
 

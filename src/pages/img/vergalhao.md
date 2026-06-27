@@ -1,6 +1,6 @@
 ---
 title: ". img . vergalhão"
-customTitle: "fefo . img . <span style='color:rgb(155,57,0);'>verga</span><span style='color:rgb(155,57,0);font-size:3.5em;'>l</span><span style='color:rgb(155,57,0);'>hão</span>"
+customTitle: "fefo . img . <span style='color:rgb(155,57,0);'>verga</span><span style='color:rgb(155,57,0);font-size:3em;'>l</span><span style='color:rgb(155,57,0);'>hão</span>"
 layout: ../../layouts/BaseLayout.astro
 ---
 
