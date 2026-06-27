@@ -1,12 +1,6 @@
 ---
 title: ". img . dropped"
-    customTitle: "fefo . img . <span class='drop-l' style='--y:35px;--r:15deg;--s:0s'>d</span>
-<span class='drop-l' style='--y:48px;--r:-20deg;--s:0.1s'>r</span>
-<span class='drop-l' style='--y:30px;--r:35deg;--s:0.2s'>o</span>
-<span class='drop-l' style='--y:52px;--r:-10deg;--s:0.32s'>p</span>
-<span class='drop-l' style='--y:38px;--r:45deg;--s:0.4s'>p</span>
-<span class='drop-l' style='--y:55px;--r:-30deg;--s:0.5s'>e</span>
-<span class='drop-l' style='--y:42px;--r:20deg;--s:0.6s'>d</span>"
+customTitle: "fefo . img . <span class='dropped-word'><span class='drop-l' style='--y:35px;--r:15deg;--s:0s'>d</span><span class='drop-l' style='--y:48px;--r:-20deg;--s:0.1s'>r</span><span class='drop-l' style='--y:30px;--r:35deg;--s:0.2s'>o</span><span class='drop-l' style='--y:52px;--r:-10deg;--s:0.32s'>p</span><span class='drop-l' style='--y:38px;--r:45deg;--s:0.4s'>p</span><span class='drop-l' style='--y:55px;--r:-30deg;--s:0.5s'>e</span><span class='drop-l' style='--y:42px;--r:20deg;--s:0.6s'>d</span></span>"
 layout: ../../layouts/BaseLayout.astro
 ---
 
@@ -14,6 +8,7 @@ layout: ../../layouts/BaseLayout.astro
 .dropped-word {
   display: inline-block;
   position: relative;
+  vertical-align: top;
 }
 .drop-l {
   display: inline-block;
@@ -26,7 +21,6 @@ layout: ../../layouts/BaseLayout.astro
   100% { transform: translateY(var(--y)) rotate(var(--r)); }
 }
 </style>
-
 <div class="project">
 
 *fallen masks*<br>
