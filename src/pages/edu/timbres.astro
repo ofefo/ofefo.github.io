@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const frontmatter = { title: ". edu . Jogo dos timbres", customTitle: "Jogo dos timbres 🎵", hideNav: true };
+---
+
+<BaseLayout frontmatter={frontmatter}>
+
+<div class="pt">
+<br/>
+Ouça o som com atenção e adivinhe qual instrumento está tocando.
+</div>
+
+<div id="game" aria-live="polite"></div>
+
+<style is:global>
+  #game {
+    --accent: #ff6e00;
+    --accent-hover: #ff8c33;
+    max-width: 540px;
+    margin: 1.2em auto;
+
+    @media (min-width: 768px) {
+      max-width: 800px;
+      font-size: 1.3em;
+    }
+    @media (min-width: 1024px) {
+      max-width: 1000px;
+      font-size: 1.6em;
+    }
+
+    .mem-btn {
+      font: inherit;
+      color: #eee;
+      background: #2d2d2d;
+      border: 2px solid #5a5a5a;
+      border-radius: 8px;
+      padding: 0.8em 1em;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .mem-btn:hover:not(:disabled) { background: #3a3a3a; }
+    .mem-btn:disabled { opacity: 0.55; cursor: default; }
+    .mem-diffs, .mem-answers { display: flex; flex-wrap: wrap; gap: 0.7em; justify-content: center; }
+    .mem-diffs { margin: 1em 0; }
+    .mem-diff.on { background: #3b2a12; border-color: var(--accent); }
+    .mem-start {
+      display: block;
+      margin: 0.6em auto;
+      background: var(--accent);
+      color: #1c1c1c;
+      font-weight: bold;
+      font-size: 1.15em;
+      border-color: var(--accent);
+      letter-spacing: 0.05em;
+    }
+    .mem-start:hover:not(:disabled) { background: var(--accent-hover); }
+    .mem-top { display: flex; justify-content: space-between; color: #aaa; font-size: 0.92em; margin-bottom: 0.5em; }
+    .mem-prompt { font-size: 1.15em; text-align: center; margin: 0.4em 0 1em; }
+    .mem-ans { min-width: 8.5em; text-align: center; padding: 1em 0.7em; }
+    .mem-ans.mem-correct { background: #1e4d24; border-color: #66bb6a; }
+    .mem-ans.mem-wrong { background: #5a1616; border-color: #ef5350; }
+    .mem-controls { display: flex; justify-content: center; margin-top: 1em; }
+    .mem-feedback { text-align: center; min-height: 1.6em; margin-top: 0.8em; font-size: 1.05em; color: #ddd; }
+    .mem-feedback.mem-ok { color: #9be89b; }
+    .mem-feedback.mem-nope { color: #f09090; }
+    .mem-end .mem-score { font-size: 2.4em; text-align: center; margin: 0.3em 0; color: var(--accent); }
+    .mem-end .mem-endmsg { text-align: center; font-size: 1.2em; margin-bottom: 0.8em; }
+  }
+</style>
+
+<script src="https://g-ubimus.github.io/litePlay.js/src/core/litePlay.constants.js" is:inline></script>
+<script src="/scripts/timbre-data.js" is:inline></script>
+<script src="/scripts/timbre.js" is:inline></script>
+
+</BaseLayout>

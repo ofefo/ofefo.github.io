@@ -32,7 +32,7 @@ const showFooter = !hideFooterPages.includes(currentPath);
 	    <hr noshade="noshade"/>  
 	</div>
 	
-    <Navigation />
+    {!frontmatter.hideNav && <Navigation />}
 
     <slot />
 
